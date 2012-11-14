@@ -161,7 +161,7 @@ function getPlaceDetails(results, status) {
 			service.getDetails(request, createMarker);
         }	
 	} else {
-		alert('Sorry, nothing is found');
+		alert('Aaaaahhh! No beer! Please try a new location.');
 	}
 }
 
@@ -199,9 +199,9 @@ function createMarker(obj, status) {
 		// prepare info window
 		var infowindow = new google.maps.InfoWindow({
 			content: '<div class="text-shadow-light padding20" style="color:#222222; font-size: 13px; height: 100px; width: 200px;">' + obj.name + 
-			'<br /><address>' + obj.formatted_address + '</address>'  + '<a href="tel:' + obj.formatted_phone_number + '">'
+			'<br /><address>' + obj.formatted_address + '</address>'  + 'Phone: <a href="tel:' + obj.formatted_phone_number + '">'
 			+ obj.formatted_phone_number + '</a><br />' +
-			'<a href="' + obj.url + '" target="_blank">Check us out on Google Places</a></div>'
+			'</div>'
 		});
 
 		// add event handler to current marker
