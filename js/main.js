@@ -27,7 +27,7 @@ $(document).ready(function() {
 	$('#popUp').click(function(e) {
 		if($('#mobileSearchSection').height() == 0) {
 			$('#mobileSearchSection').animate({
-				height : '100px'
+				height : '70px'
 			}, 300, 'linear');
 		} else {
 			$('#mobileSearchSection').animate({

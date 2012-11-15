@@ -141,12 +141,6 @@ input.search-query {
 	margin: 0;
 }
 
-#mobileSearchSection div {
-	width: 300px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 #cancelSearch {
 	margin-right: 0;
 }
