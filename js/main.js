@@ -95,8 +95,8 @@ function getAddressLatLongDesktop() {
         if (status == google.maps.GeocoderStatus.OK) { // and, if everything is ok
             // we will center map
             var addrLocation = results[0].geometry.location;
-			var lat = results[0].geometry.location.Ya;
-			var lng = results[0].geometry.location.Za;
+			var lat = results[0].geometry.location.$a;
+			var lng = results[0].geometry.location.ab;
             map.setCenter(addrLocation);
 			map.setZoom(10);
 			findPlaces(lat,lng);			
@@ -115,8 +115,8 @@ function getAddressLatLongMobile() {
         if (status == google.maps.GeocoderStatus.OK) { // and, if everything is ok
             // we will center map
             var addrLocation = results[0].geometry.location;
-			var lat = results[0].geometry.location.Ya;
-			var lng = results[0].geometry.location.Za;
+			var lat = results[0].geometry.location.$a;
+			var lng = results[0].geometry.location.ab;
             map.setCenter(addrLocation);
 			map.setZoom(12);
 			findPlaces(lat,lng);			
